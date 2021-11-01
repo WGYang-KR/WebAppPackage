@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D67800E32AD04761FEA2E2 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EF97374118A3AC1825D962 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework */; };
+		48957B03CCA23AEE113B97C8 /* Pods_OrderHero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB111D4E663EC2A55932E2D /* Pods_OrderHero.framework */; };
+		6EFA91C8269C6256C49C5FAD /* Pods_OrderHero_OrderHeroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C387D2E357DDDBFB108C0C9C /* Pods_OrderHero_OrderHeroUITests.framework */; };
 		791E714B2717CFB4001CFB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E714A2717CFB4001CFB03 /* AppDelegate.swift */; };
 		791E714D2717CFB4001CFB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E714C2717CFB4001CFB03 /* SceneDelegate.swift */; };
 		791E714F2717CFB4001CFB03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E714E2717CFB4001CFB03 /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 		791E71622717CFB9001CFB03 /* OrderHeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E71612717CFB9001CFB03 /* OrderHeroTests.swift */; };
 		791E716C2717CFB9001CFB03 /* OrderHeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E716B2717CFB9001CFB03 /* OrderHeroUITests.swift */; };
 		791E716E2717CFB9001CFB03 /* OrderHeroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E716D2717CFB9001CFB03 /* OrderHeroUITestsLaunchTests.swift */; };
+		794FCD7C272919E700E2E1C1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 794FCD76272919E500E2E1C1 /* data.json */; };
+		794FCD882729217900E2E1C1 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 794FCD872729217900E2E1C1 /* images */; };
+		794FCD9127292AA600E2E1C1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794FCD9027292AA600E2E1C1 /* NotificationService.swift */; };
+		794FCD9527292AA600E2E1C1 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 794FCD8E27292AA600E2E1C1 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DE280530C0E4553D1BD9B18 /* Pods_OrderHeroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B588DA5324071F8B9706688C /* Pods_OrderHeroTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,22 +41,65 @@
 			remoteGlobalIDString = 791E71462717CFB4001CFB03;
 			remoteInfo = OrderHero;
 		};
+		794FCD9327292AA600E2E1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 791E713F2717CFB4001CFB03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 794FCD8D27292AA600E2E1C1;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		794FCD9927292AA600E2E1C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				794FCD9527292AA600E2E1C1 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0BB111D4E663EC2A55932E2D /* Pods_OrderHero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderHero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10EB0AF9BF16EB3C2878E93B /* Pods-OrderHeroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHeroTests.release.xcconfig"; path = "Target Support Files/Pods-OrderHeroTests/Pods-OrderHeroTests.release.xcconfig"; sourceTree = "<group>"; };
+		27EF97374118A3AC1825D962 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderHero_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6EC014FFFE4C9876798D0B /* Pods-OrderHero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero.release.xcconfig"; path = "Target Support Files/Pods-OrderHero/Pods-OrderHero.release.xcconfig"; sourceTree = "<group>"; };
+		561FB58F2BBFDBF062332023 /* Pods-OrderHeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHeroTests.debug.xcconfig"; path = "Target Support Files/Pods-OrderHeroTests/Pods-OrderHeroTests.debug.xcconfig"; sourceTree = "<group>"; };
 		791E71472717CFB4001CFB03 /* OrderHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		791E714A2717CFB4001CFB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		791E714C2717CFB4001CFB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		791E714E2717CFB4001CFB03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		791E71512717CFB4001CFB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		791E71532717CFB9001CFB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		791E71562717CFB9001CFB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		791E71582717CFB9001CFB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		791E715D2717CFB9001CFB03 /* OrderHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		791E71612717CFB9001CFB03 /* OrderHeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHeroTests.swift; sourceTree = "<group>"; };
 		791E71672717CFB9001CFB03 /* OrderHeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderHeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		791E716B2717CFB9001CFB03 /* OrderHeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHeroUITests.swift; sourceTree = "<group>"; };
 		791E716D2717CFB9001CFB03 /* OrderHeroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHeroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		794FCD76272919E500E2E1C1 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		794FCD8127291E1A00E2E1C1 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		794FCD872729217900E2E1C1 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		794FCD8E27292AA600E2E1C1 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		794FCD9027292AA600E2E1C1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		794FCD9227292AA600E2E1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		794FCD9A27292D0400E2E1C1 /* OrderHero.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrderHero.entitlements; sourceTree = "<group>"; };
+		794FCD9B27292E5E00E2E1C1 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		794FCDA0272A660C00E2E1C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		794FCDA1272A660C00E2E1C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		794FCDA2272A661F00E2E1C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ko; path = ko.lproj/Main.storyboard; sourceTree = "<group>"; };
+		794FCDA3272A662200E2E1C1 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ko; path = ko.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82CE19A26B1A330A17D744B7 /* Pods-OrderHero-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OrderHero-OneSignalNotificationServiceExtension/Pods-OrderHero-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		86A47A21815CC1F5159C2D07 /* Pods-OrderHero-OrderHeroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero-OrderHeroUITests.debug.xcconfig"; path = "Target Support Files/Pods-OrderHero-OrderHeroUITests/Pods-OrderHero-OrderHeroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C38BA52739FC9344F3E3CEC /* Pods-OrderHero-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OrderHero-OneSignalNotificationServiceExtension/Pods-OrderHero-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		A6FC003D61C4B71A5FC6CE26 /* Pods-OrderHero-OrderHeroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero-OrderHeroUITests.release.xcconfig"; path = "Target Support Files/Pods-OrderHero-OrderHeroUITests/Pods-OrderHero-OrderHeroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B588DA5324071F8B9706688C /* Pods_OrderHeroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderHeroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C387D2E357DDDBFB108C0C9C /* Pods_OrderHero_OrderHeroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderHero_OrderHeroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72F9A11668DE050BB8061B0 /* Pods-OrderHero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero.debug.xcconfig"; path = "Target Support Files/Pods-OrderHero/Pods-OrderHero.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48957B03CCA23AEE113B97C8 /* Pods_OrderHero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE280530C0E4553D1BD9B18 /* Pods_OrderHeroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +123,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFA91C8269C6256C49C5FAD /* Pods_OrderHero_OrderHeroUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		794FCD8B27292AA600E2E1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D67800E32AD04761FEA2E2 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DE1D8E78CE35796AC85A8D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F72F9A11668DE050BB8061B0 /* Pods-OrderHero.debug.xcconfig */,
+				4B6EC014FFFE4C9876798D0B /* Pods-OrderHero.release.xcconfig */,
+				86A47A21815CC1F5159C2D07 /* Pods-OrderHero-OrderHeroUITests.debug.xcconfig */,
+				A6FC003D61C4B71A5FC6CE26 /* Pods-OrderHero-OrderHeroUITests.release.xcconfig */,
+				561FB58F2BBFDBF062332023 /* Pods-OrderHeroTests.debug.xcconfig */,
+				10EB0AF9BF16EB3C2878E93B /* Pods-OrderHeroTests.release.xcconfig */,
+				82CE19A26B1A330A17D744B7 /* Pods-OrderHero-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				9C38BA52739FC9344F3E3CEC /* Pods-OrderHero-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		791E713E2717CFB4001CFB03 = {
 			isa = PBXGroup;
 			children = (
 				791E71492717CFB4001CFB03 /* OrderHero */,
 				791E71602717CFB9001CFB03 /* OrderHeroTests */,
 				791E716A2717CFB9001CFB03 /* OrderHeroUITests */,
+				794FCD8F27292AA600E2E1C1 /* OneSignalNotificationServiceExtension */,
 				791E71482717CFB4001CFB03 /* Products */,
+				1DE1D8E78CE35796AC85A8D6 /* Pods */,
+				D7AE6198F8EF54B988367F8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +172,7 @@
 				791E71472717CFB4001CFB03 /* OrderHero.app */,
 				791E715D2717CFB9001CFB03 /* OrderHeroTests.xctest */,
 				791E71672717CFB9001CFB03 /* OrderHeroUITests.xctest */,
+				794FCD8E27292AA600E2E1C1 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +180,9 @@
 		791E71492717CFB4001CFB03 /* OrderHero */ = {
 			isa = PBXGroup;
 			children = (
+				794FCD9A27292D0400E2E1C1 /* OrderHero.entitlements */,
+				794FCD76272919E500E2E1C1 /* data.json */,
+				794FCD872729217900E2E1C1 /* images */,
 				791E714A2717CFB4001CFB03 /* AppDelegate.swift */,
 				791E714C2717CFB4001CFB03 /* SceneDelegate.swift */,
 				791E714E2717CFB4001CFB03 /* ViewController.swift */,
@@ -127,6 +211,28 @@
 			path = OrderHeroUITests;
 			sourceTree = "<group>";
 		};
+		794FCD8F27292AA600E2E1C1 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				794FCD9B27292E5E00E2E1C1 /* OneSignalNotificationServiceExtension.entitlements */,
+				794FCD9027292AA600E2E1C1 /* NotificationService.swift */,
+				794FCD9227292AA600E2E1C1 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		D7AE6198F8EF54B988367F8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				794FCD8127291E1A00E2E1C1 /* Lottie.framework */,
+				0BB111D4E663EC2A55932E2D /* Pods_OrderHero.framework */,
+				C387D2E357DDDBFB108C0C9C /* Pods_OrderHero_OrderHeroUITests.framework */,
+				B588DA5324071F8B9706688C /* Pods_OrderHeroTests.framework */,
+				27EF97374118A3AC1825D962 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,13 +240,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 791E71712717CFB9001CFB03 /* Build configuration list for PBXNativeTarget "OrderHero" */;
 			buildPhases = (
+				97D8B50D7F910136D5D571CC /* [CP] Check Pods Manifest.lock */,
 				791E71432717CFB4001CFB03 /* Sources */,
 				791E71442717CFB4001CFB03 /* Frameworks */,
 				791E71452717CFB4001CFB03 /* Resources */,
+				C0C21757E18C8906D0CCFF2C /* [CP] Embed Pods Frameworks */,
+				794FCD9927292AA600E2E1C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				794FCD9427292AA600E2E1C1 /* PBXTargetDependency */,
 			);
 			name = OrderHero;
 			productName = OrderHero;
@@ -151,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 791E71742717CFB9001CFB03 /* Build configuration list for PBXNativeTarget "OrderHeroTests" */;
 			buildPhases = (
+				176A5BE932929CA9FB7F96F6 /* [CP] Check Pods Manifest.lock */,
 				791E71592717CFB9001CFB03 /* Sources */,
 				791E715A2717CFB9001CFB03 /* Frameworks */,
 				791E715B2717CFB9001CFB03 /* Resources */,
@@ -169,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 791E71772717CFB9001CFB03 /* Build configuration list for PBXNativeTarget "OrderHeroUITests" */;
 			buildPhases = (
+				FF445709A3A041A2CA2B4A30 /* [CP] Check Pods Manifest.lock */,
 				791E71632717CFB9001CFB03 /* Sources */,
 				791E71642717CFB9001CFB03 /* Frameworks */,
 				791E71652717CFB9001CFB03 /* Resources */,
+				6B76CD5E72F860174741BE54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +295,24 @@
 			productName = OrderHeroUITests;
 			productReference = 791E71672717CFB9001CFB03 /* OrderHeroUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		794FCD8D27292AA600E2E1C1 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 794FCD9627292AA600E2E1C1 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				1BD6D53EC0896F4EFE0224EC /* [CP] Check Pods Manifest.lock */,
+				794FCD8A27292AA600E2E1C1 /* Sources */,
+				794FCD8B27292AA600E2E1C1 /* Frameworks */,
+				794FCD8C27292AA600E2E1C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 794FCD8E27292AA600E2E1C1 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,15 +335,17 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 791E71462717CFB4001CFB03;
 					};
+					794FCD8D27292AA600E2E1C1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 				};
 			};
 			buildConfigurationList = 791E71422717CFB4001CFB03 /* Build configuration list for PBXProject "OrderHero" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
+				ko,
 			);
 			mainGroup = 791E713E2717CFB4001CFB03;
 			productRefGroup = 791E71482717CFB4001CFB03 /* Products */;
@@ -222,6 +355,7 @@
 				791E71462717CFB4001CFB03 /* OrderHero */,
 				791E715C2717CFB9001CFB03 /* OrderHeroTests */,
 				791E71662717CFB9001CFB03 /* OrderHeroUITests */,
+				794FCD8D27292AA600E2E1C1 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -231,8 +365,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794FCD882729217900E2E1C1 /* images in Resources */,
 				791E71572717CFB9001CFB03 /* LaunchScreen.storyboard in Resources */,
 				791E71542717CFB9001CFB03 /* Assets.xcassets in Resources */,
+				794FCD7C272919E700E2E1C1 /* data.json in Resources */,
 				791E71522717CFB4001CFB03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +387,139 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		794FCD8C27292AA600E2E1C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		176A5BE932929CA9FB7F96F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderHeroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BD6D53EC0896F4EFE0224EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderHero-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B76CD5E72F860174741BE54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrderHero-OrderHeroUITests/Pods-OrderHero-OrderHeroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrderHero-OrderHeroUITests/Pods-OrderHero-OrderHeroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrderHero-OrderHeroUITests/Pods-OrderHero-OrderHeroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D8B50D7F910136D5D571CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderHero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0C21757E18C8906D0CCFF2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrderHero/Pods-OrderHero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrderHero/Pods-OrderHero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrderHero/Pods-OrderHero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF445709A3A041A2CA2B4A30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrderHero-OrderHeroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		791E71432717CFB4001CFB03 /* Sources */ = {
@@ -281,6 +549,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		794FCD8A27292AA600E2E1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794FCD9127292AA600E2E1C1 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,13 +570,19 @@
 			target = 791E71462717CFB4001CFB03 /* OrderHero */;
 			targetProxy = 791E71682717CFB9001CFB03 /* PBXContainerItemProxy */;
 		};
+		794FCD9427292AA600E2E1C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 794FCD8D27292AA600E2E1C1 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 794FCD9327292AA600E2E1C1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		791E71502717CFB4001CFB03 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				791E71512717CFB4001CFB03 /* Base */,
+				794FCDA0272A660C00E2E1C1 /* ko */,
+				794FCDA2272A661F00E2E1C1 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,7 +590,8 @@
 		791E71552717CFB9001CFB03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				791E71562717CFB9001CFB03 /* Base */,
+				794FCDA1272A660C00E2E1C1 /* ko */,
+				794FCDA3272A662200E2E1C1 /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +603,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -367,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -381,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -422,7 +707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,25 +719,35 @@
 		};
 		791E71722717CFB9001CFB03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72F9A11668DE050BB8061B0 /* Pods-OrderHero.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = OrderHero/OrderHero.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.3.0;
 				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrderHero/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오더히어로";
+				INFOPLIST_KEY_NSCameraUsageDescription = "사업자등록증 촬영을 위해 카메라 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "배송 위치 정보를 위해서 사용자의 위치 정보 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사업자등록증 사진을 불러오기 위해서 사진 정보 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deliverylab.OrderHero;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderhero.mobileapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -462,25 +757,35 @@
 		};
 		791E71732717CFB9001CFB03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6EC014FFFE4C9876798D0B /* Pods-OrderHero.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = OrderHero/OrderHero.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.3.0;
 				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrderHero/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "오더히어로";
+				INFOPLIST_KEY_NSCameraUsageDescription = "사업자등록증 촬영을 위해 카메라 권한이 필요합니다.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "배송 위치 정보를 위해서 사용자의 위치 정보 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "사업자등록증 사진을 불러오기 위해서 사진 정보 권한이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deliverylab.OrderHero;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderhero.mobileapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -490,6 +795,7 @@
 		};
 		791E71752717CFB9001CFB03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561FB58F2BBFDBF062332023 /* Pods-OrderHeroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,7 +803,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +821,7 @@
 		};
 		791E71762717CFB9001CFB03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10EB0AF9BF16EB3C2878E93B /* Pods-OrderHeroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,7 +829,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,12 +847,14 @@
 		};
 		791E71782717CFB9001CFB03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A47A21815CC1F5159C2D07 /* Pods-OrderHero-OrderHeroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,12 +872,14 @@
 		};
 		791E71792717CFB9001CFB03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6FC003D61C4B71A5FC6CE26 /* Pods-OrderHero-OrderHeroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +892,62 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = OrderHero;
+			};
+			name = Release;
+		};
+		794FCD9727292AA600E2E1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CE19A26B1A330A17D744B7 /* Pods-OrderHero-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderhero.mobileapp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		794FCD9827292AA600E2E1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C38BA52739FC9344F3E3CEC /* Pods-OrderHero-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2VX8Z5UQ6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orderhero.mobileapp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -619,6 +986,15 @@
 			buildConfigurations = (
 				791E71782717CFB9001CFB03 /* Debug */,
 				791E71792717CFB9001CFB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		794FCD9627292AA600E2E1C1 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794FCD9727292AA600E2E1C1 /* Debug */,
+				794FCD9827292AA600E2E1C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
