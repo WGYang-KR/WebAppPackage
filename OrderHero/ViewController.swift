@@ -86,6 +86,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.mainWebView.evaluateJavaScript("document.querySelector('body').innerHTML") { (result, error) in
             if error != nil {
@@ -141,6 +142,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         decisionHandler(.allow)
     }
     
+    //웹뷰 로드가 끝났을 때 호출 되는 함수.
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         //온 푸시가 있을 때
@@ -152,11 +154,69 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         
     }
     
+    //target = _blank 지원하도록 변경.
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if navigationAction.targetFrame == nil {
             webView.load(navigationAction.request)
         }
         return nil
     }
+    
+    /*1.3.1 추가 - javascript alert 뜨도록 추가 */
+    //javaScript의 alert을 띄웁니다. [확인]버튼
+    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping () -> Void) {
+        
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
+            completionHandler()
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    //javaScript의 alert을 띄웁니다. [확인], [취소]버튼
+    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping (Bool) -> Void) {
+        
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
+            completionHandler(true)
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "취소", style: .default, handler: { (action) in
+            completionHandler(false)
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    //javaScript의 alert을 띄웁니다. [확인], [취소]버튼 + 텍스트 입력 패널
+    func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo,
+                 completionHandler: @escaping (String?) -> Void) {
+        
+        let alertController = UIAlertController(title: nil, message: prompt, preferredStyle: .alert)
+        
+        alertController.addTextField { (textField) in
+            textField.text = defaultText
+        }
+        
+        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
+            if let text = alertController.textFields?.first?.text {
+                completionHandler(text)
+            } else {
+                completionHandler(defaultText)
+            }
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "취소", style: .default, handler: { (action) in
+            completionHandler(nil)
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    /* ./javascript alert 뜨도록 추가 */
+    
+    
 }
 
