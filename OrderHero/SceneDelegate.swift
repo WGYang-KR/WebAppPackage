@@ -6,18 +6,29 @@
 //
 
 import UIKit
+import WebKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+  
     @available(iOS 13.0, *)
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        //앱이 running 중이 아닐 때, 외부 딥링크 수신
+        let viewController = window!.rootViewController as! ViewController
+        if let url = connectionOptions.urlContexts.first?.url {
+            print("DeepLinkURL = \(url)")
+            if(url.host != nil) {
+            viewController.isThereLinkURL = true
+            viewController.linkURL = URL(string: "https://"+url.host!+url.path)
+            }
+        }
+   
     }
     @available(iOS 13.0, *)
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -48,6 +59,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    //앱 running시, 외부 딥링크 수신
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+       // let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       // let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let viewController = window!.rootViewController as! ViewController
+        if let url = URLContexts.first?.url {
+            print("DeepLinkURL = \(url)")
+            if(url.host != nil) {
+            viewController.isThereLinkURL = true
+            viewController.linkURL = URL(string: "https://"+url.host!+url.path)
+            viewController.mainWebView.reload()
+            }
+                
+        }
+    }
 
 }
 

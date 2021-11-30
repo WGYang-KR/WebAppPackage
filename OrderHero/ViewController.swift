@@ -17,8 +17,10 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     @IBOutlet var mainWebView: WKWebView!
     @IBOutlet var mainView: UIView!
    
-    var isTherePush = false;
-    var pushURL=URL(string: main_url);
+    var isTherePush = false; //푸시가 있는지
+    var pushURL=URL(string: main_url); //푸시된 URL
+    var isThereLinkURL = false; //외부 딥링크 URL이 있는지.
+    var linkURL = URL(string:""); //외부 딥링크 URL.
     
     override func loadView() {
         super.loadView()
@@ -158,6 +160,12 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
             let request = URLRequest(url: self.pushURL!)
             mainWebView.load(request)
             isTherePush = false
+        }
+        
+        if(isThereLinkURL == true) {
+            let request = URLRequest(url:self.linkURL!)
+            mainWebView.load(request)
+            isThereLinkURL = false
         }
         
         if(mainWebView.url == URL(string: main_url) ) {
