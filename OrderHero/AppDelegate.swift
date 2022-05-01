@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           // OneSignal initialization
           OneSignal.setLocationShared(false)
           OneSignal.initWithLaunchOptions(launchOptions)
-          OneSignal.setAppId("900d0412-f432-431a-b37e-989dcda89fc2")
+          OneSignal.setAppId(OneSignalAppID)
           
           // promptForPushNotifications will show the native iOS notification permission prompt.
           // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)

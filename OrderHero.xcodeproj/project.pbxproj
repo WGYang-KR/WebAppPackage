@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27D67800E32AD04761FEA2E2 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EF97374118A3AC1825D962 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework */; };
 		48957B03CCA23AEE113B97C8 /* Pods_OrderHero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB111D4E663EC2A55932E2D /* Pods_OrderHero.framework */; };
+		6A05A692281E6AAD0002EA57 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05A691281E6AAD0002EA57 /* Config.swift */; };
 		6EFA91C8269C6256C49C5FAD /* Pods_OrderHero_OrderHeroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C387D2E357DDDBFB108C0C9C /* Pods_OrderHero_OrderHeroUITests.framework */; };
 		791E714B2717CFB4001CFB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E714A2717CFB4001CFB03 /* AppDelegate.swift */; };
 		791E714D2717CFB4001CFB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E714C2717CFB4001CFB03 /* SceneDelegate.swift */; };
@@ -70,6 +71,7 @@
 		27EF97374118A3AC1825D962 /* Pods_OrderHero_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrderHero_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6EC014FFFE4C9876798D0B /* Pods-OrderHero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHero.release.xcconfig"; path = "Target Support Files/Pods-OrderHero/Pods-OrderHero.release.xcconfig"; sourceTree = "<group>"; };
 		561FB58F2BBFDBF062332023 /* Pods-OrderHeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrderHeroTests.debug.xcconfig"; path = "Target Support Files/Pods-OrderHeroTests/Pods-OrderHeroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A05A691281E6AAD0002EA57 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		791E71472717CFB4001CFB03 /* OrderHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		791E714A2717CFB4001CFB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		791E714C2717CFB4001CFB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				791E714C2717CFB4001CFB03 /* SceneDelegate.swift */,
 				791E714E2717CFB4001CFB03 /* ViewController.swift */,
 				791E71502717CFB4001CFB03 /* Main.storyboard */,
+				6A05A691281E6AAD0002EA57 /* Config.swift */,
 				791E71532717CFB9001CFB03 /* Assets.xcassets */,
 				791E71552717CFB9001CFB03 /* LaunchScreen.storyboard */,
 				791E71582717CFB9001CFB03 /* Info.plist */,
@@ -527,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				791E714F2717CFB4001CFB03 /* ViewController.swift in Sources */,
+				6A05A692281E6AAD0002EA57 /* Config.swift in Sources */,
 				791E714B2717CFB4001CFB03 /* AppDelegate.swift in Sources */,
 				791E714D2717CFB4001CFB03 /* SceneDelegate.swift in Sources */,
 			);
